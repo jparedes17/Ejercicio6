@@ -150,9 +150,9 @@ public class Frame6 extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here
-        double numpalabras, tamtext, numcolor, totalpag;
-        double op1, op2, op3, acum1= 0;
-        double y;
+        long numpalabras, tamtext, numcolor, totalpag;
+        long op1, op2, op3, acum1= 0;
+        long y;
         String resultado, x;
         
         if (txtNumCol.getText().trim().isEmpty())
@@ -171,9 +171,9 @@ public class Frame6 extends javax.swing.JFrame {
                     txtTamañoLet.requestFocusInWindow();
                 }
         else {
-        numpalabras= Double.parseDouble(txtNumPalabras.getText());
-        tamtext= Double.parseDouble(txtTamañoLet.getText());
-        numcolor= Double.parseDouble(txtNumCol.getText());
+        numpalabras= Long.parseLong(txtNumPalabras.getText());
+        tamtext= Long.parseLong(txtTamañoLet.getText());
+        numcolor= Long.parseLong(txtNumCol.getText());
         
         op1= numpalabras*20000;
         acum1= acum1+op1;
